@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[UserViewModel::class.java]
 
         resetBtn.setOnClickListener () {
-            val intent = Intent(this, Countdown::class.java)
+            val intent = Intent(this, CoffeeQuestionsActivity::class.java)
             startActivity(intent)
         }
 

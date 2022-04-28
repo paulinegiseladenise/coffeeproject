@@ -18,13 +18,16 @@
         android:id="@+id/countdownFragment"
         android:name="com.example.coffee.CountdownFragment"
         android:label="fragment_countdown"
-        tools:layout="@layout/fragment_countdown" >
+        tools:layout="@layout/fragment_coffee_questions" >
         <action
             android:id="@+id/action_countdownFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
         <action
             android:id="@+id/action_countdownFragment_to_resultFragment"
             app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_countdownFragment_to_answerFragment"
+            app:destination="@id/answerFragment" />
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
@@ -33,6 +36,15 @@
         tools:layout="@layout/fragment_result" >
         <action
             android:id="@+id/action_resultFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/answerFragment"
+        android:name="com.example.coffee.AnswerFragment"
+        android:label="fragment_answer"
+        tools:layout="@layout/fragment_answer" >
+        <action
+            android:id="@+id/action_answerFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

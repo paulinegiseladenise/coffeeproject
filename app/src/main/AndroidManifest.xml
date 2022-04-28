@@ -3,6 +3,7 @@
     package="com.example.coffee">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -12,16 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Countdown">
         <activity
-            android:name="com.example.coffee.Beige"
+            android:name=".TheAnswerActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.coffee.Result2"
+            android:name=".BeigeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.coffee.Countdown"
+            android:name=".BlackActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.coffee.MainActivity"
+            android:name=".CoffeeQuestionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
